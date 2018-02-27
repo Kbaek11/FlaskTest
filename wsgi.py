@@ -4,7 +4,7 @@ application = Flask(__name__)
 @application.route('/')
 def hello():
     return render_template('hello.html')
-application
+
 @application.route('/result',methods = ['POST', 'GET'])
 def result():
    if request.method == 'POST':
